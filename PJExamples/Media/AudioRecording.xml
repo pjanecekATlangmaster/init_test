@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Speaking/audio recording</title>
+  </head>
+  <body order="12" instr-title="Speaking instruction" class="app-doc" instr-body="/data/instr/new/SPEAKING">
+
+    <doc-example id="text0">
+      <header-prop>
+        <h3>Audio recording </h3>
+      </header-prop>
+      <doc-descr>
+        Student speach will be recorded. It is human evaluated control so no imediate score is visible.<br />
+        Sound recording time is not limited.
+      </doc-descr>
+      <recording id="audio-0" />
+    </doc-example>
+
+    <doc-example id="text1">
+      <header-prop>
+        <h3>Audio recording with speak-seconds-from - speak-seconds-to setting</h3>
+      </header-prop>
+      <doc-descr>
+        Recording can be stopped anytime, when click outside audio-capture control and it will be stopped without saving. Modal audio recording is preferable for test use.<br />
+        Sound recording is limited between speak-seconds-from and speak-seconds-to. After speak-seconds-to recording will be stopped and saved.
+      </doc-descr>
+      <recording id="audio-1" limit-min="5" limit-max="10" />
+    </doc-example>
+
+    <doc-example id="text3">
+      <header-prop>
+        <h3>Audio recording with speak-seconds-from setting only</h3>
+      </header-prop>
+      <doc-descr>Sound recording is not limited but minimum time is speak-seconds-from.</doc-descr>
+      <recording id="audio-3" limit-min="5" />
+    </doc-example>
+
+    <doc-example id="text4">
+      <header-prop>
+        <h3>Audio recording with speak-seconds-to setting only</h3>
+      </header-prop>
+      <doc-descr>Sound recording is limited to speak-seconds-to time. After speak-seconds-to recording will be stopped and saved.</doc-descr>
+      <recording id="audio-4" limit-max="5" />
+    </doc-example>
+
+    <doc-example id="text2">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-from - speak-seconds-to settings</h3>
+      </header-prop>
+      <doc-descr>
+        displays in modal dialog<br /> cannot be stopped before it reaches speak-seconds-from time
+      </doc-descr>
+      <div id="content">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-2" limit-min="5" limit-max="10" record-in-dialog="true" dialog-header-id="content" />
+    </doc-example>
+
+    <doc-example id="text21">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-from settings</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content1">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-21" limit-min="5" record-in-dialog="true" dialog-header-id="content1" />
+    </doc-example>
+
+    <doc-example id="text22">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-to settings</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content2">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-22" limit-max="10" record-in-dialog="true" dialog-header-id="content2" />
+    </doc-example>
+
+    <doc-example id="text23">
+      <header-prop>
+        <h3>Modal audio recording with re-record disabled</h3>
+      </header-prop>
+      <doc-descr>Student is not allowed to repeate the recording</doc-descr>
+      <div id="content3">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-23" record-in-dialog="true" dialog-header-id="content3" single-attempt="true" />
+    </doc-example>
+
+    <doc-example id="text7">
+      <header-prop>
+        <h3>Modal Audio recording small size</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content4">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-7" record-in-dialog="true" dialog-size="small" dialog-header-id="content4" />
+    </doc-example>
+
+    <doc-example id="text9">
+      <header-prop>
+        <h3>Modal Audio recording large size</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content6">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-9" record-in-dialog="true" dialog-size="large" dialog-header-id="content6" />
+    </doc-example>
+    
+    <!-- RJ -->
+    
+    <doc-example id="text18">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-from, speak-second-to and recommend-seconds-from</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content18">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-18" limit-min="2" limit-max="30" limit-recommend="10" record-in-dialog="true" dialog-header-id="content18" />
+    </doc-example>
+
+    <doc-example id="text26">
+      <header-prop>
+        <h3>Modal audio recording with recommend-seconds-from="10" settings only</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content26">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-26" limit-recommend="10" record-in-dialog="true" dialog-header-id="content26" />
+    </doc-example>
+
+    <doc-example id="text19">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-from and recommend-seconds-from</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content19">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-19" limit-min="2" limit-recommend="10" record-in-dialog="true" dialog-header-id="content19" />
+    </doc-example>
+
+    <doc-example id="text191">
+      <header-prop>
+        <h3>Modal audio recording with speak-second-to and recommend-seconds-from</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content191">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-191" limit-max="60" limit-recommend="10" record-in-dialog="true" dialog-header-id="content191" />
+    </doc-example>
+    
+    <hr />
+    
+    <doc-example id="text25">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-from = speak-seconds-to settings</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content25">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-25" limit-min="10" limit-max="10" record-in-dialog="true" dialog-header-id="content25" />
+    </doc-example>
+
+
+    <doc-example id="text27">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-from &gt; recommend-seconds-from settings</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content27">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-27" limit-min="10" limit-recommend="5" record-in-dialog="true" dialog-header-id="content27" />
+    </doc-example>
+
+    <doc-example id="text28">
+      <header-prop>
+        <h3>Modal audio recording with speak-seconds-to &lt; speak-seconds-from settings</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div id="content28">Speaking questions, images, texts. Will be later visible in modal dialog</div>
+      <recording id="audio-28" limit-max="5" limit-recommend="10" record-in-dialog="true" dialog-header-id="content28" />
+    </doc-example>
+
+  </body>
+</html>

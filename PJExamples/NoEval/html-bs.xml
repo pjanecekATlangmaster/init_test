@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>HTML5 + BS</title>
+  </head>
+  <body order="0" instr-title="HTML5 - Instruction" class="app-doc" instr-body="">
+    
+    <doc-example id="html">
+      <header-prop>
+        <h3>Almost any HTML5 element</h3>
+      </header-prop>
+      <doc-descr>one can use almost any HTML formating element to make excercise looks as desired</doc-descr>
+      
+    </doc-example>
+
+    <doc-example id="bs">
+      <header-prop>
+        <h3>Almost any Bootstrap element - commonly used for formatting are grid system to make responsive design and panels</h3>
+      </header-prop>
+      <doc-descr>one can use many Bootstrap formating element to make excercise looks as desired</doc-descr>
+      <a href="http://getbootstrap.com/">Bootstrap</a>
+    </doc-example>
+
+
+  </body>
+</html>

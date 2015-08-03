@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://test.langmaster.com/alpha/coursemodelschema.xsd">
+  <head>
+    <title>See also link</title>
+  </head>
+  <body order="20" class="app-doc" see-also-links="ListGroup_Noop|../../examples/controls/correction">
+    <doc-example id="seeAlso" class="app-doc">
+      <header-prop>
+        <h3>See also link</h3>
+      </header-prop>
+      <doc-descr>used to link other part of the course</doc-descr>
+      <p>
+        Using attribute in the body element  course-see-also-str="ListGroup_Noop|../../examples/controls/correction"
+      </p>
+    </doc-example>
+  </body>
+</html>

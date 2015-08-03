@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>True x False + Yes x No</title>
+  </head>
+  <body order="8" instr-title="True x False - Instruction" class="app-doc" instr-body="FILLING_IN">
+
+    <doc-example id="checkbox0">
+      <header-prop>
+        <h3>Check-item x check-box</h3>
+      </header-prop>
+      <doc-descr>
+        check-item and check-box are similar typs of controls<br/>
+        check-item can have nested content<br/>
+        check-box is inline type of control and can have text before and after<br/>
+        Use of attribute is the same in both controls.
+      </doc-descr>
+      <p>
+        <check-item correct-value="true" text-type="no" >true</check-item>
+      </p>
+      <p>
+        text before <check-box correct-value="true" text-type="no"/> text after
+      </p>
+    </doc-example>
+
+    <doc-example id="no">
+      <header-prop>
+        <h3>No text</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+
+      <check-item id="cb0" correct-value="true" text-type="no" >
+        Content
+      </check-item>
+
+    </doc-example>
+
+    <doc-example id="no1">
+      <header-prop>
+        <h3>Init value</h3>
+      </header-prop>
+      <doc-descr>Init value may be set</doc-descr>
+
+      <check-item id="cb01" correct-value="true" init-value="true" text-type="no" >
+        Content
+      </check-item>
+    </doc-example>
+
+    <doc-example id="checkbox1">
+      <header-prop>
+        <h3>Examples - read only checkbox</h3>
+      </header-prop>
+      <doc-descr>Usually is used to give student example how to fill in rest of checkboxes. Init value attribute should be used.</doc-descr>
+      <check-item id="cb02" correct-value="true" init-value="true" text-type="no" read-only="true" >
+        Content
+      </check-item>
+    </doc-example>
+
+    <doc-example id="checkbox2">
+      <header-prop>
+        <h3>Skip evaulation of this checkbox</h3>
+      </header-prop>
+      <doc-descr>Usually is used to give student chance to answer according to his oppinion. This checkbox is skipped for evaulation</doc-descr>
+      <check-item id="cb03" correct-value="true" text-type="no" skip-evaluation="true" >
+        Content
+      </check-item>
+    </doc-example>
+
+    <doc-example id="checkbox3">
+      <header-prop>
+        <h3>And group</h3>
+      </header-prop>
+      <doc-descr>More check boxes may be put into eval-group. All have to be answered correctly to get full score.</doc-descr>
+      <p>
+        <check-item correct-value="true" eval-group="and-ch1" text-type="no" >true</check-item>
+      </p>
+      <p>
+        <check-item correct-value="false" eval-group="and-ch1" text-type="no" >false</check-item>
+      </p>
+    </doc-example>
+
+    <doc-example id="truefalse1">
+      <header-prop>
+        <h3>TrueFalse - true</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+
+      <check-item id="cb1" correct-value="true" text-type="true-false" >
+        Content
+      </check-item>
+
+    </doc-example>
+
+    <doc-example id="truefalse2">
+      <header-prop>
+        <h3>TrueFalse - false</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+
+      <check-item id="cb2" correct-value="false" text-type="true-false">
+        Content
+      </check-item>
+    </doc-example>
+
+    <doc-example id="truefalse1makro">
+      <header-prop>
+        <h3>TrueFalse using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-true-false text-id="true-false">
+        <![CDATA[
+#Answer to this sentence is Yes.
+Answer to this sentence is No.
+    ]]>
+      </macro-true-false>
+    </doc-example>
+
+    <doc-example id="yesno1">
+      <header-prop>
+        <h3>YesNo - yes</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <check-item id="cb4" correct-value="true" text-type="yes-no">
+        Content
+      </check-item>
+    </doc-example>
+
+    <doc-example id="yesno2">
+      <header-prop>
+        <h3>YesNo - no</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <check-item id="cb3" correct-value="false" text-type="yes-no">
+        Content
+      </check-item>
+    </doc-example>
+
+    <doc-example id="yesno2makro">
+      <header-prop>
+        <h3>YesNo using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-true-false text-id="yes-no">
+        <![CDATA[
+#Answer to this sentence is Yes.
+Answer to this sentence is No.
+    ]]>
+      </macro-true-false>
+    </doc-example>
+
+  </body>
+</html>

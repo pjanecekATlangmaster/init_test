@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Sounded Text playback</title>
+  </head>
+  <body order="7" instr-title="Sounded Text playback instruction" class="app-doc" instr-body="SOUND_PLAYBACK">
+
+    <doc-example id="text1">
+      <header-prop>
+        <h3>Simple text playback</h3>
+      </header-prop>
+      <doc-descr>Sound playback enabled text - small sound marks</doc-descr>
+      <media-text>
+        <include-text cut-url="media/Media1"></include-text>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="text11">
+      <header-prop>
+        <h3>Displays text from media file with disabled playback</h3>
+      </header-prop>
+      <doc-descr>Doeasn't display small sound marks</doc-descr>
+      <media-text passive="true">
+        <include-text cut-url="media/Media1"></include-text>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="text2">
+      <header-prop>
+        <h3>Part of text playback</h3>
+      </header-prop>
+      <doc-descr>Displays only part of the media file</doc-descr>
+      <media-text subset="2-">
+        <include-text cut-url="media/Media1"></include-text>
+      </media-text>
+      <media-text subset="2-4">
+        <include-text cut-url="media/Media1"></include-text>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="text3">
+      <header-prop>
+        <h3>Simples text playback reverse order</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <media-text subset="5,4,3">
+        <include-text cut-url="media/Media1"></include-text>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="text4">
+      <header-prop>
+        <h3>Simple text playback with text replacement</h3>
+      </header-prop>
+      <doc-descr>It is possible to replace some text from media file with another text or control</doc-descr>
+      <media-text>
+        <include-text cut-url="media/Media1">
+        <phrase-replace phrase-idx="2">
+          Replaced text
+        </phrase-replace>
+      </include-text>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="text5">
+      <header-prop>
+        <h3>Text playback, text entered manually</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <media-text>
+        <cut-text media-url="media/Media1.mp3">
+          <phrase beg-pos="1" end-pos="10">obsah 1</phrase>
+          <phrase beg-pos="11" end-pos="100">obsah 2</phrase>
+          <phrase beg-pos="101" end-pos="200">long long long textlong long long textlong long long text</phrase>
+          <phrase beg-pos="201" end-pos="300">long long long textlong long long textlong long long text</phrase>
+          <phrase beg-pos="301" end-pos="400">long long long textlong long long textlong long long text</phrase>
+        </cut-text>
+      </media-text>
+    </doc-example>
+
+  </body>
+</html>

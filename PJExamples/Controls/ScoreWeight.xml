@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Score weight</title>
+  </head>
+  <body order="14" class="app-doc">
+
+    <doc-example id="weight">
+      <header-prop>
+        <h3>Keep default score-weight</h3>
+      </header-prop>
+      <doc-descr>
+        Each gap_fill control has default score weight set to 100 points.<br />
+        Evaluation score is sum of all controls score-weight divided by its number<br />
+        Overall for this examples you may get 200 points
+      </doc-descr>
+      <eval-button id="g1"></eval-button>
+      <gap-fill correct-value="WEIGHT 100" init-value="WEIGHT 100" eval-button-id="g1" />
+      <gap-fill correct-value="WEIGHT 100" init-value="WEIGHT 100" eval-button-id="g1" />
+    </doc-example>
+
+    <doc-example id="weight2">
+      <header-prop>
+        <h3>Change default score weight of 100 points of evaluated activity to different value</h3>
+      </header-prop>
+      <doc-descr>
+        Each control has default score weight set to 100 points. When some evaluated control is more difficult/easier than others one can increase/decrease this value<br />
+        Evaluation score is sum of all controls score-weight divided by its number<br />
+        Overall for this examples you may get 250 points
+      </doc-descr>
+      <eval-button id="g20"></eval-button>
+      <gap-fill correct-value="WEIGHT 200" score-weight="200" init-value="WEIGHT 200" eval-button-id="g20" />
+      <gap-fill correct-value="WEIGHT 50" score-weight="50" init-value="WEIGHT 50" eval-button-id="g20" />
+    </doc-example>
+
+    <doc-example id="weight3">
+      <header-prop>
+        <h3>Change default score weight of 100 for each pairing item to something else</h3>
+      </header-prop>
+      <doc-descr>
+        Each pairing item has default score weight set to 100 points so when you have 4 pairing items, it has overall maximal score 400<br />
+        To chage it to 100 (25 points each item) you have to add score-weight="100"<br />
+        Overall for this examples you may get 100 points
+      </doc-descr>
+      <eval-button id="g30"></eval-button>
+      <pairing id="par1" score-weight="100" eval-button-id="g30">
+        <pairing-item right="right1">left1</pairing-item>
+        <pairing-item right="right2">left2</pairing-item>
+        <pairing-item right="right3">left3</pairing-item>
+        <pairing-item right="right4">left4</pairing-item>
+      </pairing>
+    </doc-example>
+
+    
+
+  </body>
+</html>

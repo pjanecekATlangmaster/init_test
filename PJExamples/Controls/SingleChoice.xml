@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Single Choice</title>
+  </head>
+  <body order="6" instr-title="Single Selection - Instruction" class="app-doc">
+
+    <doc-example id="radiobutton1">
+      <header-prop>
+        <h3>Simple example</h3>
+      </header-prop>
+      <doc-descr>Their relation is made by eval-group attribute</doc-descr>
+      <radio-button correct-value="true" eval-group="and-r1">True</radio-button>
+      <radio-button correct-value="false" eval-group="and-r1">False</radio-button>
+    </doc-example>
+
+    <doc-example id="radiobutton11">
+      <header-prop>
+        <h3>Init value</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <radio-button correct-value="true" init-value="true" eval-group="and-r11">True</radio-button>
+      <radio-button correct-value="false" eval-group="and-r11">False</radio-button>
+    </doc-example>
+
+    <doc-example id="radiobutton2">
+      <header-prop>
+        <h3>Nested radio buttons</h3>
+      </header-prop>
+      <doc-descr>Radiobuttons may be nested in another elements. </doc-descr>
+      <p>
+        <radio-button eval-group="and-rb2">false</radio-button>
+      </p>
+      <p>
+        <radio-button correct-value="true" eval-group="and-rb2">true</radio-button>
+      </p>
+    </doc-example>
+
+    <doc-example id="radiobutton3">
+      <header-prop>
+        <h3>Examples - read only radio buttons</h3>
+      </header-prop>
+      <doc-descr>Usually is used to give student example how to fill in rest of radio buttons. Init value attribute should be used.</doc-descr>
+      <radio-button correct-value="true" init-value="true" eval-group="and-r3" read-only="true">True</radio-button>
+      <radio-button correct-value="false" eval-group="and-r3" read-only="true">False</radio-button>
+    </doc-example>
+
+    <doc-example id="radiobutton4">
+      <header-prop>
+        <h3>Skip evaulation of this radio-buttons</h3>
+      </header-prop>
+      <doc-descr>Usually is used to give student chance to answer according to his oppinion. This radio button is skipped for evaulation</doc-descr>
+      <radio-button correct-value="true" eval-group="and-r4" skip-evaluation="true">True</radio-button>
+      <radio-button correct-value="false" eval-group="and-r4">False</radio-button>
+    </doc-example>
+    <doc-example id="singleChoice">
+      <header-prop>
+        <h3>SingleChoice</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <single-choice id="sch1">
+        <radio-button>possibility 1</radio-button>
+        <radio-button correct-value="true">possibility 2</radio-button>
+        <radio-button>possibility 3</radio-button>
+      </single-choice>
+    </doc-example>
+
+    <doc-example id="singleChoiceimages">
+      <header-prop>
+        <h3>SingleChoice</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <single-choice id="sch11">
+        <radio-button>
+          <img src="media/01.gif"/>
+        </radio-button>
+        <radio-button correct-value="true">
+          <img src="media/02.gif"/>
+        </radio-button>
+        <radio-button>
+          <img src="media/03.gif"/>
+        </radio-button>
+      </single-choice>
+    </doc-example>
+
+
+
+    <doc-example id="singleChoiceinPanel">
+      <header-prop>
+        <h3>SingleChoice in panel</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <panel>
+        <header-prop>
+          <h4>Veta 1 _____</h4>
+        </header-prop>
+        <single-choice id="sch3">
+          <radio-button>wrong 1</radio-button>
+          <radio-button correct-value="true">correct</radio-button>
+          <radio-button>wrong 2</radio-button>
+        </single-choice>
+      </panel>
+    </doc-example>
+
+    <doc-example id="singleChoiceinPanelMakro">
+      <header-prop>
+        <h3>SingleChoice using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-single-choices>
+        <![CDATA[
+        1. When do you have breakfast?
+        a) in the evening
+        b) #in the morning
+        c) at home
+
+        2. A: Where are you going?~B: I am going _______ .
+        a) #home
+        b) to home
+        c) in the evening
+      ]]>
+      </macro-single-choices>
+    </doc-example>
+
+  </body>
+</html>

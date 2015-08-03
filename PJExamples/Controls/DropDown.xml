@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>DropDown</title>
+  </head>
+  <body order="4" instr-title="xxx" class="app-doc" see-also-links="" instr-body="filling_in_from_a_list_new">
+
+    <doc-example id="dropDown1">
+      <header-prop>
+        <h3>With offering discard mode</h3>
+      </header-prop>
+      <doc-descr>Word is checked after use</doc-descr>
+      <offering id="from-drop-down" mode="drop-down-discard" />
+
+      <drop-down id="gp28" correct-value="dogs" offering-id="from-drop-down" />
+      <drop-down id="gp29" correct-value="horses" offering-id="from-drop-down" />
+
+    </doc-example>
+
+    <doc-example id="dropDown2">
+      <header-prop>
+        <h3>With offering keep mode</h3>
+      </header-prop>
+      <doc-descr>Word can be used more times</doc-descr>
+      <offering id="offer2" mode="drop-down-keep" />
+
+      <drop-down id="gp18" correct-value="him" offering-id="offer2" />
+      <drop-down id="gp13" correct-value="his" offering-id="offer2" />
+      <drop-down id="gp20" correct-value="HIM" offering-id="offer2" />
+      <drop-down id="gp30" correct-value="His" offering-id="offer2" />
+
+    </doc-example>
+
+    <doc-example id="dropDown3">
+      <header-prop>
+        <h3>Offering with false words keep mode</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <offering words="xxx|yyy yyy yyy yyy" id="offer3" mode="drop-down-keep" />
+
+      <drop-down id="gp31" correct-value="him" offering-id="offer3" />
+      <drop-down id="gp32" correct-value="His" offering-id="offer3" />
+      <drop-down id="gp33" correct-value="Him" offering-id="offer3" />
+      <drop-down id="gp34" correct-value="his" offering-id="offer3" />
+
+    </doc-example>
+
+    <doc-example id="dropDown311">
+      <header-prop>
+        <h3>Width set manually</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <offering id="of311"/>
+      <drop-down id="gp3111" correct-value="a" width="100"  offering-id="of311"/>
+      <drop-down id="gp3211" correct-value="aaa" width="100"  offering-id="of311"/>
+      <drop-down id="gp3311" correct-value="aaaaaa" width="100" offering-id="of311" />
+      <drop-down id="gp3411" correct-value="aaaaaaaa" width="100" offering-id="of311" />
+
+    </doc-example>
+
+    <doc-example id="dropDown32">
+      <header-prop>
+        <h3>Exchangeable answers</h3>
+      </header-prop>
+      <doc-descr>
+        Used when student can exchange order of answers<br/>
+        attribute eval-group is used in format id-exchangeable where 'id' is selectable but necessary value
+      </doc-descr>
+      <offering id="of32"/>
+      <drop-down id="gp321" correct-value="apples" eval-group="dd32-exchangeable" offering-id="of32" />
+      <drop-down id="gp324" correct-value="bannanas" eval-group="dd32-exchangeable" offering-id="of32" />
+
+    </doc-example>
+
+    <doc-example id="dropDown31">
+      <header-prop>
+        <h3>All drop downs must be answered correctly to be scored</h3>
+      </header-prop>
+      <doc-descr>
+        Used when student have to answer all correct<br/>
+        attribute eval-group is used in format and-id where 'id' is selectable but necessary value
+      </doc-descr>
+      <offering id="of31"/>
+      <drop-down id="gp311" correct-value="a" eval-group="and-dd31" offering-id="of31" />
+      <drop-down id="gp312" correct-value="b" eval-group="and-dd31" offering-id="of31" />
+    </doc-example>
+
+    <doc-example id="dropDown4">
+      <header-prop>
+        <h3>Two offerings in one excercise</h3>
+      </header-prop>
+      <doc-descr>One can use IDs to address in what offering the word should be seen </doc-descr>
+
+      <offering id="ds1" />
+      <drop-down id="gp41" correct-value="dogs" offering-id="ds1" />
+      <drop-down id="gp42" correct-value="horses" offering-id="ds1" />
+
+      <offering id="ds2" />
+      <drop-down id="gp43" correct-value="kangaroos" offering-id="ds2" />
+      <drop-down id="gp44" correct-value="hippotatamuses" offering-id="ds2" />
+
+    </doc-example>
+
+    <doc-example id="dropDown1makro">
+      <header-prop>
+        <h3>Dropdown list using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-list inline-type="DragTarget">
+        <![CDATA[
+Tady patří dragg1 {dragg_item1}
+{dragg_item2} tady patří dragg2
+]]>
+      </macro-list>
+    </doc-example>
+
+    <!--<doc-example id="dropDown2makro">
+      <header-prop>
+        <h3>Dropdown table</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <macro-table inline-type="DragTarget">
+        <![CDATA[
+Vpravo patři dragg1 \ {dragg_item1}
+{dragg_item2} \ Vlevo patří dragg2
+]]>
+      </macro-table>
+    </doc-example>-->
+  
+    
+    
+    <doc-example id="dropdowncasesensitive">
+      <header-prop>
+        <h3>Case sensitive evaluation</h3>
+      </header-prop>
+      <doc-descr>It is used to distinguish capital letters.</doc-descr>
+      <offering id="ofddcs"/>
+      <gap-fill correct-value="CORRECT" case-sensitive="true" offering-id="ofddcs" />
+      <gap-fill correct-value="correct" case-sensitive="true" offering-id="ofddcs" />
+
+    </doc-example>
+
+    <doc-example id="ddentity">
+      <header-prop>
+        <h3>Entity in drop down</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <offering id="ofddentity" mode="drop-down-discard" />
+
+      <drop-down id="dde1" correct-value="B&amp;amp;B" offering-id="ofddentity" />
+      <drop-down id="dde2" correct-value="&amp;lt;true&amp;gt;" offering-id="ofddentity" />
+
+    </doc-example>
+    
+    
+  </body>
+</html>

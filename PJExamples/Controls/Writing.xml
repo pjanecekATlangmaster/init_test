@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Writing</title>
+  </head>
+  <body order="12" instr-title="Writing - Instruction" class="app-doc" see-also-links="" instr-body="/data/instr/new/WRITING">
+
+    <doc-example id="writing1">
+      <header-prop>
+        <h3>Writing simple</h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text. Control is human evaluated so no score is visible imediatelly</doc-descr>
+      <writing id="wr1" />
+    </doc-example>
+
+    <doc-example id="writing2">
+      <header-prop>
+        <h3>Writing - words from to</h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text but number of words between words-min and words-max is correct</doc-descr>
+      <writing id="wr2" limit-min="10" limit-max="20" />
+    </doc-example>
+
+    <doc-example id="writing3">
+      <header-prop>
+        <h3>Writing - words from</h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text but number of words at least words-min is correct</doc-descr>
+      <writing id="wr3" limit-min="10" />
+    </doc-example>
+
+    <doc-example id="writing4">
+      <header-prop>
+        <h3>Writing - words to</h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text but number of words maximum words-max is correct</doc-descr>
+      <writing id="wr4" limit-max="20" />
+    </doc-example>
+
+    <doc-example id="writing5">
+      <header-prop>
+        <h3>Writing - init rows</h3>
+      </header-prop>
+      <doc-descr>Make default size for written text bigger</doc-descr>
+      <writing id="wr5" limit-min="150" limit-max="200" number-of-rows="10" />
+    </doc-example>
+
+    <doc-example id="writing31">
+      <header-prop>
+        <h3>Writing - min, max, recommended</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <writing id="wr31" limit-min="10" limit-max="200" limit-recommend="100" />
+    </doc-example>
+
+    <doc-example id="writing32">
+      <header-prop>
+        <h3>Writing - min, recommended</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <writing id="wr32" limit-min="10" limit-recommend="100" />
+    </doc-example>
+
+    <doc-example id="writing33">
+      <header-prop>
+        <h3>Writing - max, recommended</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <writing id="wr33" limit-max="200" limit-recommend="100" />
+    </doc-example>
+    
+    <hr />
+    
+    <!-- RJ -->
+    <doc-example id="writing10">
+      <header-prop>
+        <h3>Writing - words from to, recommend-words-min="30"</h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text but number of words between words-min and words-max is correct</doc-descr>
+      <writing id="wr10" limit-min="10" limit-max="20" limit-recommend="30" />
+    </doc-example>
+
+    <doc-example id="writing11">
+      <header-prop>
+        <h3>Writing - words-min = words-max </h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text but number of words between words-min and words-max is correct</doc-descr>
+      <writing id="wr11" limit-min="5" limit-max="5" />
+    </doc-example>
+
+    <doc-example id="writing12">
+      <header-prop>
+        <h3>Writing - words-min &gt; words-max </h3>
+      </header-prop>
+      <doc-descr>Student may write unlimited amount of text but number of words between words-min and words-max is correct</doc-descr>
+      <writing id="wr12" limit-min="10" limit-max="5" />
+    </doc-example>
+
+
+  </body>
+</html>

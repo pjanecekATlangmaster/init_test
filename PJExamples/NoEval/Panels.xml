@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Panels</title>
+  </head>
+  <body order="9" instr-title="Panels - Instruction" class="app-doc" instr-body="">
+    <doc-example id="panel1">
+      <header-prop>
+        <h3>Panel basic examples</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <panel>
+        <header-prop>
+          <h3 class="panel-title">Title panel 1</h3>
+        </header-prop>
+        Text panel 1
+      </panel>
+    </doc-example>
+
+    <doc-example id="panel2">
+      <header-prop>
+        <h3>Panel two columns</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div class="row">
+        <div class="col-md-6">
+          <panel>
+            <header-prop>
+              <h3 class="panel-title">Title panel 1</h3>
+            </header-prop>
+            Text panel 1
+          </panel>
+        </div>
+        <div class="col-md-6">
+          <panel>
+            <header-prop>
+              <h3 class="panel-title">Title panel 2</h3>
+            </header-prop>
+            Text panel 2
+          </panel>
+        </div>
+      </div>
+    </doc-example>
+
+
+    <doc-example id="panel3">
+      <header-prop>
+        <h3>Panel two columns without header</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <two-column>
+        <panel>
+          1_xxx
+        </panel>
+        <panel>
+          2_yyy
+        </panel>
+        <panel>
+          3_aaa
+        </panel>
+        <panel>
+          4_bbb
+        </panel>
+        <panel>
+          5_111
+        </panel>
+        <panel>
+          6_222
+        </panel>
+      </two-column>
+    </doc-example>
+
+    <doc-example id="panel4">
+      <header-prop>
+        <h3>Panel two rows no header</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <div class="row">
+        <div class="col-md-12">
+          <panel>
+            Panel 3 (bez titulku)
+          </panel>
+        </div>
+        <div class="col-md-12">
+          <panel>
+            Panel 4 (bez titulku)
+          </panel>
+        </div>
+      </div>
+      
+    </doc-example>
+
+   
+  </body>
+</html>

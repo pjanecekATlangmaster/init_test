@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Lists</title>
+  </head>
+  <body order="7" instr-title="instr7" class="app-doc">
+    <doc-example id="lists1">
+      <header-prop>
+        <h3>Lists different styles</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <list delim="." is-striped="false" icon="arrowRight" color="primary">
+        <li>Text 1</li>
+        <li>
+          Text 2
+          <list delim="." is-striped="false" icon="number" color="warning">
+            <li>Text 3</li>
+            <li>Text 4</li>
+          </list>
+        </li>
+        <li>
+          Text 2
+          <list delim=")" is-striped="false" icon="letter" color="danger">
+            <li>Text 3</li>
+            <li>Text 4</li>
+          </list>
+        </li>
+        <li>
+          Text 2
+          <list delim=":" is-striped="false" icon="upperLetter" color="info">
+            <li>Text 3</li>
+            <li>Text 4</li>
+          </list>
+        </li>
+      </list>
+    </doc-example>
+
+
+    <doc-example id="lists2">
+      <header-prop>
+        <h3>Lists different icon and colour</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <list delim="." is-striped="true" icon="caretRight" color="success">
+        <li>Text 3</li>
+        <li>Text 4</li>
+        <li>Text 3</li>
+        <li>Text 4</li>
+      </list>
+    </doc-example>
+
+    <doc-example id="lists3">
+      <header-prop>
+        <h3>List with heading</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <h4>Instructions:</h4>
+      <ul>
+        <li>
+          Icon:
+          <ul>
+            <li>
+              any of <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons</a>, without icon- prefix
+            </li>
+            <li>
+              number | letter | upper-letter
+            </li>
+          </ul>
+        </li>
+        <li>
+          Color: primary | warning | danger | success | info
+        </li>
+        <li>
+          Delim: any string, default is '.'
+        </li>
+        <li>
+          IsStriped: true | false
+        </li>
+      </ul>
+    </doc-example>
+
+    <doc-example id="lists4">
+      <header-prop>
+        <h3>List with heading</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <h2>Lists</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>
+          Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+    </doc-example>
+
+    <doc-example id="lists5">
+      <header-prop>
+        <h3>List ordered</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <ol>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit</li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ol>
+    </doc-example>
+
+    <doc-example id="lists6">
+      <header-prop>
+        <h3>List with no separator</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <ul class="list-unstyled">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>
+          Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+    </doc-example>
+
+    <doc-example id="lists7">
+      <header-prop>
+        <h3>List in line</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <ul class="list-inline">
+        <li>Lorem ipsum</li>
+        <li>Phasellus iaculis</li>
+        <li>Nulla volutpat</li>
+      </ul>
+    </doc-example>
+
+    <doc-example id="lists8">
+      <header-prop>
+        <h3>List with sections</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <dl>
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      </dl>
+    </doc-example>
+
+    <doc-example id="lists9">
+      <header-prop>
+        <h3>List with sections in line</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <dl class="dl-horizontal">
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+        <dt>Felis euismod semper eget lacinia</dt>
+        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+      </dl>
+    </doc-example>
+
+    <doc-example id="list-group">
+      <header-prop>
+        <h3>List Group + Noop</h3>
+      </header-prop>
+      <doc-descr>Special list placed in the table</doc-descr>
+      <list-group is-striped="true">
+        <node>
+          Der einfachste, der beim Drehen produziert wird, ist zylindrisch.
+        </node>
+        <node>
+          Der Drehmeißel wird fest auf den Schlitten der Drehmaschine
+        </node>
+        <node>
+          Der Einkäufer fragt den Gebrauchtmaschinen-Händler nach einer Drehmaschine.
+        </node>
+        <node>
+          Der Gebrauchtmaschinen-Händler erklärt, dass Drehmeißel nicht zu seinem gehören.
+        </node>
+        <node>
+          Der Besucher führt im Technischen Museum ein Gespräch über historische.
+        </node>
+      </list-group>
+
+    </doc-example>
+
+  </body>
+</html>

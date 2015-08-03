@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Sound playback</title>
+  </head>
+  <body instr-title="Playback instruction" class="app-doc" instr-body="SOUND_PLAYBACK">
+
+    <doc-example id="text1">
+      <header-prop>
+        <h3>Big sound mark</h3>
+      </header-prop>
+      <doc-descr>Big clickable sound mark without showing any text around. Used to play whole media file.</doc-descr>
+      <media-big-mark media-url="media/Media1.mp3" />
+    </doc-example>
+
+    <doc-example id="text11">
+      <header-prop>
+        <h3>Play part of big sound mark</h3>
+      </header-prop>
+      <doc-descr>If media envelope is created and the media file is cut one can limit sound playback only to some part of the file.</doc-descr>
+      <media-big-mark cut-url="media/Media1" />
+    </doc-example>
+
+    <doc-example id="text2">
+      <header-prop>
+        <h3>Mixed big sound mark and sounded text</h3>
+      </header-prop>
+      <doc-descr>Description of media-text element is in differnt part of examples.</doc-descr>
+      <media-big-mark share-media-id="mst2" />
+      <media-text id="mst2">
+        <include-text cut-url="media/Media1"></include-text>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="text5">
+      <header-prop>
+        <h3>Media player no cut</h3>
+      </header-prop>
+      <doc-descr>Play/pause/seek sound control</doc-descr>
+      <media-player media-url="media/Media3.mp3"></media-player>
+    </doc-example>
+
+    <doc-example id="text3">
+      <header-prop>
+        <h3>Media player with subtitles</h3>
+      </header-prop>
+      <doc-descr>Play/pause/seek/subtitles sound control</doc-descr>
+      <media-player>
+        <include-dialog cut-url="media/Media3"></include-dialog>
+      </media-player>
+
+    </doc-example>
+
+    <doc-example id="text4">
+      <header-prop>
+        <h3>Media player with dialog</h3>
+      </header-prop>
+      <doc-descr>Displays dialog bellow media player control. Both controls (media player and dialog) are related and can be manipulated by each other</doc-descr>
+      <media-player share-media-id="pdlg1" />
+      <media-text id="pdlg1">
+        <include-dialog cut-url="media/Media3"></include-dialog>
+      </media-text>
+    </doc-example>
+
+
+  </body>
+</html>

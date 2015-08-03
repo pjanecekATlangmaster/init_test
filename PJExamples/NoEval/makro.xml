@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Makro tables</title>
+  </head>
+  <body order="1" instr-title="instr7" class="app-doc" see-also-links="" instr-body="">
+
+    <doc-example id="table1">
+      <header-prop>
+        <h3>Dictionary table</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-table inline-type="TtsSound">
+        <![CDATA[
+{gründen}   \  založit
+{aufnehmen}  (die Produktion)   (du nimmst auf, nahm   auf, aufgenommen)  \  zahájit (výrobu)
+{ständig}  \   neustále
+{Wanderbekleidung}  (die,  -, 0)  \  turistické oblečení
+{Jagdbekleidung}  (die,  -, 0)  \  lovecké oblečení
+]]>
+      </macro-table>
+    </doc-example>
+    
+    <doc-example id="table2">
+      <header-prop>
+        <h3>Table with header</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-table inline-type="no">
+        <![CDATA[
+          #lmy <b>Lieferung / Leistung</b>\#cmy <b>Menge</b> \#cmy <b>Einzelpreis</b> </i>	\#cmy <b>Gesamtpreis</b>
+          #lm Luxusbürostuhl \#cm 2\#cm 89,00 €\#cm 178,00 €
+          #lm Rollcontainer mit~ Schubladen \#cm 1 \#cm 39,00 € \#cm 39,00 €
+          #lty <b><h4>Technische Daten:</h4></b><b>Fahrzeugtyp</b>~~<b>Türen</b>ul.\Gesamtgewicht\>8 g/km\E5
+        ]]>
+      </macro-table>
+    </doc-example>
+
+    <doc-example id="table3">
+      <header-prop>
+        <h3>Article</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-article>
+        <![CDATA[
+<h4 class="visible-small"><b>Für Freizeit und Beruf</b></h4>
+<p>Unsere Firma wurde 1990 gegründet und hat ihre Produktion sofort aufgenommen. Unser Sortiment wurde ständig erweitert und heute spezialisieren wir uns auf Wander-, Jagd- und Sportbekleidung. Gegenwärtig gehören wir zu den größten Produzenten dieser Bekleidung in Tschechien.</p>
+<p>Unser Angebot, das im aktuellen Firmenkatalog vorgestellt wird, bilden Produktmodelle in allen Größen: Jacken, Mäntel, Hosen, Westen, Hemden, Mützen und vieles andere. Alle Modelle sind sofort lieferbar.</p>
+<p>Neben diesem Standardangebot stellen wir auch Bekleidung nach individuellen Wünschen und Anforderungen der Kunden her. Unsere Erzeugnisse sind wegen ihrer hohen Qualität und Eleganz bei den Kunden sehr beliebt. Dank unserer technischen Möglichkeiten und unserer variablen Produktionskapazität können wir auch spezielle Aufträge in hohen Stückzahlen kurzfristig erledigen.</p>
+<p>Der Firmensitz ist in Roudnice, wo sich auch die Geschäftsleitung, der Vertrieb, die technische Abteilung, das Lager, die Musterhalle und einige Produktionsbereiche befinden. Unseren Kunden steht hier auch eine Werksverkaufsstelle mit dem vollständigen Produktionssortiment zur Verfügung. Die Firma besitzt eigene Verkaufsstellen sowie Betriebe auch in anderen Städten in Tschechien.</p>
+]]>
+      </macro-article>
+    </doc-example>
+
+    <doc-example id="table4">
+      <header-prop>
+        <h3>Icon list</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-icon-list delim="." is-striped="true" icon="arrowRight" color="success">
+        <![CDATA[
+1. <b>typisch deutsch</b> - direkte Kommunikation, Sachorientiertheit, polychrones Arbeiten, Kompetenzbasis, Individualismus
+      2. <b>nicht typisch für Deutschland</b> - Vertrauensbasis, Kollektivismus, synchrones Arbeiten, indirekte Kommunikation, Beziehungsorientiertheit
+]]>
+      </macro-icon-list>
+    </doc-example>
+  </body>
+</html>

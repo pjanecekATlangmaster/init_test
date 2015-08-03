@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Not sounded Dialogs</title>
+  </head>
+  <body order="3" instr-title="Not sounded dialog instruction" class="app-doc" instr-body="">
+
+    <doc-example id="dialogDirectCut">
+      <header-prop>
+        <h3>Dialog basic example</h3>
+      </header-prop>
+      <doc-descr>One can create dialog directly in the excercise, no external files are needed.</doc-descr>
+      <media-text passive="true">
+        <cut-dialog>
+          <replica actor-name="A">
+            <phrase>
+              Hello, Thomas. 
+            </phrase>
+            <phrase>
+              How are you?
+            </phrase>
+          </replica>
+          <replica actor-name="B">
+            <phrase>
+              Fine, thanks.
+            </phrase>
+            <phrase>
+              And you Fiona?
+            </phrase>
+          </replica>
+          <replica actor-name="A">
+            <phrase>
+              Fine, thanks.
+            </phrase>
+          </replica>
+        </cut-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogWithGapFill">
+      <header-prop>
+        <h3>Dialog with GapFill</h3>
+      </header-prop>
+      <doc-descr>Dialog may contain some active elements like gap-fill </doc-descr>
+      <media-text passive="true">
+        <cut-dialog>
+          <replica actor-name="A">
+            <phrase>
+              Hello, Thomas.
+            </phrase>
+            <phrase>
+              How are <gap-fill id="gp12" correct-value="OK1|OK2" /> you?
+            </phrase>
+          </replica>
+          <replica actor-name="B">
+            <phrase>
+              Fine, thanks.
+            </phrase>
+          </replica>
+        </cut-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogWithWordSelection">
+      <header-prop>
+        <h3>Dialog with word selection </h3>
+      </header-prop>
+      <doc-descr>Dialog may contain some active elements like word-selection</doc-descr>
+      <media-text passive="true">
+        <cut-dialog>
+          <replica actor-name="A">
+            <phrase>
+              Hello, Thomas.
+            </phrase>
+            <phrase>
+              <word-selection id="ws2" words="How you are?|How you?|#How are you?" />
+            </phrase>
+          </replica>
+          <replica actor-name="B">
+            <phrase>
+              Fine, thanks.
+            </phrase>
+          </replica>
+        </cut-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogWithDropDown">
+      <header-prop>
+        <h3>Dialog with drop down</h3>
+      </header-prop>
+      <doc-descr>Dialog may contain some active elements like drop-down </doc-descr>
+      <offering id="dwdd" />
+      <media-text passive="true">
+        <cut-dialog>
+          <replica actor-name="A">
+            <phrase>
+              Hello, Thomas.
+            </phrase>
+            <phrase>
+              <drop-down id="g222" correct-value="How are you?" offering-id="dwdd" />
+            </phrase>
+          </replica>
+          <replica actor-name="B">
+            <phrase>
+              <drop-down id="g22" correct-value="Fine thanks." offering-id="dwdd" />
+            </phrase>
+            <phrase>
+              And you Fiona?
+            </phrase>
+          </replica>
+        </cut-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogPassive1">
+      <header-prop>
+        <h3>Not sounded dialog from media file</h3>
+      </header-prop>
+      <doc-descr>Depends on the media/media3.xml file</doc-descr>
+      <media-text passive="true">
+        <include-dialog cut-url="media/Media3"></include-dialog>
+      </media-text>
+    </doc-example>
+
+  </body>
+</html>

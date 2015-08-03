@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Simple</title>
+  </head>
+  <body class="app-doc">
+
+    <doc-example id="empty">
+      <header-prop>
+        <h3>a</h3>
+      </header-prop>
+      <doc-descr>b</doc-descr>
+      <p>c</p>
+    </doc-example>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Sounded Dialogs</title>
+  </head>
+  <body order="5" instr-title="Sounded dialog instruction" class="app-doc" instr-body="SOUND_PLAYBACK">
+
+    <doc-example id="dialog">
+      <header-prop>
+        <h3>Sounded dialog with named speaker</h3>
+      </header-prop>
+      <doc-descr>depends on the media/media3.xml file - see it for details</doc-descr>
+      <media-text>
+        <include-dialog cut-url="media/Media3"></include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogIcons">
+      <header-prop>
+        <h3>Sound playback anonymous speaker</h3>
+      </header-prop>
+      <doc-descr>depends on the media/media4.xml file</doc-descr>
+      <media-text>
+        <include-dialog cut-url="media/Media4"></include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogMoreTags">
+      <header-prop>
+        <h3>Dialog playback spread over more HTML tags</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <table>
+        <tr>
+          <td>
+            <media-text subset="1" continue-media-id="cont-1">
+              <include-dialog cut-url="media/Media3"></include-dialog>
+            </media-text>
+          </td>
+          <td>
+            <media-text id="cont-1" subset="2-3" />
+          </td>
+        </tr>
+      </table>
+    </doc-example>
+
+    <doc-example id="dialogWithGapFill">
+      <header-prop>
+        <h3>Sounded dialog with GapFill replica replacement </h3>
+      </header-prop>
+      <doc-descr>One can make student to listen carefully making him/her to answer some question as he/she listens</doc-descr>
+      <media-text>
+        <include-dialog cut-url="media/Media3">
+          <phrase-replace replica-phrase-idx="0.0">
+            Different text <gap-fill id="gp15" correct-value="OK1|OK2" /> of the sentence
+          </phrase-replace>
+        </include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogPassiveWithGapFill">
+      <header-prop>
+        <h3>Not sounded dialog with GapFill replacement</h3>
+      </header-prop>
+      <doc-descr>One can make student to read carefully making him/her to answer some question as he/she reads</doc-descr>
+      <media-text passive="true">
+        <include-dialog cut-url="media/Media3">
+          <phrase-replace replica-phrase-idx="0.0">
+            Different text <gap-fill id="gp151" correct-value="OK1|OK2" /> of the sentence
+          </phrase-replace>
+        </include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogWithDropDown">
+      <header-prop>
+        <h3>Sounded dialog replica replacement with dropdown</h3>
+      </header-prop>
+      <doc-descr>One can make student to listen carefully making him/her to answer some question as he/she listens</doc-descr>
+      <offering id="dd" />
+      <media-text>
+        <include-dialog cut-url="media/Media3">
+          <phrase-replace replica-phrase-idx="0.0">
+            Different text <drop-down correct-value="dropDown" offering-id="dd" /> of the sentence
+          </phrase-replace>
+        </include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogWithText">
+      <header-prop>
+        <h3>Sound dialog replica replacement with plain text</h3>
+      </header-prop>
+      <doc-descr>Replaces some text from media file with another</doc-descr>
+      <media-text>
+        <include-dialog cut-url="media/Media3">
+          <phrase-replace replica-phrase-idx="0.0">
+            Different text
+          </phrase-replace>
+        </include-dialog>
+      </media-text>
+
+    </doc-example>
+    <doc-example id="dialogWithWordSelection">
+      <header-prop>
+        <h3>Sounded dialog replica replacement with word selection</h3>
+      </header-prop>
+      <doc-descr>One can make student to listen carefully making him/her to answer some question as he/she listens</doc-descr>
+      <media-text>
+        <include-dialog cut-url="media/Media3">
+          <phrase-replace replica-phrase-idx="0.0">
+            <word-selection id="ws2" words="I am fine, thanks|Fiona, thanks.|#Fine, thanks." />
+          </phrase-replace>
+        </include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogDifferentOrder">
+      <header-prop>
+        <h3>Sounded dialog with sentences in different order</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <media-text id="dlg1" subset="2,1,0">
+        <include-dialog cut-url="media/Media3"></include-dialog>
+      </media-text>
+    </doc-example>
+
+    <doc-example id="dialogTextCapsule">
+      <header-prop>
+        <h3>Sounded dialog with in-excercise enhancement.</h3>
+      </header-prop>
+      <doc-descr>
+        Displays speaker name a/b<br/>
+        attribute number-of-phrases states how many replicas should be taken from media envelope
+      </doc-descr>
+      <media-text>
+        <cut-dialog>
+          <include-text cut-url="media/Media1" ></include-text>
+          <replica actor-id="a" number-of-phrases="2"></replica>
+          <replica actor-id="b" number-of-phrases="2"></replica>
+        </cut-dialog>
+      </media-text>
+    </doc-example>
+
+  </body>
+</html>

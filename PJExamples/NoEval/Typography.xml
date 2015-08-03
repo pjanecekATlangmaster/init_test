@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Typography</title>
+  </head>
+  <body order="1" instr-title="instr7" class="app-doc" see-also-links="" instr-body="">
+
+    <doc-example id="Typo1">
+      <header-prop>
+        <h3>Headers</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <h1>H1 Headlines</h1>
+      <h2>H1 Headlines</h2>
+      <h3>H1 Headlines</h3>
+      <h4>H1 Headlines</h4>
+      <h5>H1 Headlines</h5>
+      <h6>H1 Headlines</h6>
+    </doc-example>
+
+    <doc-example id="Typo2">
+      <header-prop>
+        <h3>Paragraphs</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. </p>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. </p>
+      <p class="c-par-10">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. </p>
+      <p class="c-par-14">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. </p>
+      <p class="c-par-18">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. </p>
+      <p class="c-par-24">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh. </p>
+    </doc-example>
+    <h2></h2>
+
+    <doc-example id="Typo3">
+      <header-prop>
+        <h3>Small, bold, italic, sktriked</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <p>
+        <small>small</small>
+        <b>bold</b>
+        <i>italic</i>
+      </p>
+      <p class="text-lowercase">Lowercased text.</p>
+      <p class="text-uppercase">Uppercased text.</p>
+    </doc-example>
+
+    <doc-example id="Typo4">
+      <header-prop>
+        <h3>Aligned</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <p class="text-left">Left aligned text.</p>
+      <p class="text-center">Center aligned text.</p>
+      <p class="text-right">Right aligned text.</p>
+    </doc-example>
+
+    <doc-example id="Typo5">
+      <header-prop>
+        <h3>Emphasis classes</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+      <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+      <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+      <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    </doc-example>
+
+    <doc-example id="Typo6">
+      <header-prop>
+        <h3>Blockquotes</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </blockquote>
+    </doc-example>
+
+    <doc-example id="Typo7">
+      <header-prop>
+        <h3>Blockquote right clearfix</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <blockquote class="pull-right clearfix">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </blockquote>
+      <div class="clearfix"></div>
+
+    </doc-example>
+
+    <doc-example id="Typo8">
+      <header-prop>
+        <h3>Special characters</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <div>
+        &amp;larr;
+      </div>
+      <div>
+        &amp;rarr;
+      </div>
+      <div>
+        &amp;amp;
+      </div>
+      <div>
+        Ha&amp;iuml;ti
+      </div>
+      <div>
+        &amp;agrave;
+      </div>
+    </doc-example>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Gapfill+Correction</title>
+  </head>
+  <body order="1" instr-title="Gapfill+correction instruction" class="app-doc" see-also-links="" instr-body="FILLING_IN|CORRECTION|FILLING_IN_FROM_A_LIST_NEW">
+
+    <div class="alert alert-danger">
+      Obecně pro všechny příklady: vypsat, které z PZ docExamples příkladů nejsou v PJ verzi, pak rozhodneme (Evaluation details TODO: urcit a popsat pravidla difotniho chytreho vyhodnoceni, style-sheet="self {width:150px;}", More gap-fills witr fixed width apod.)<br />
+    </div>
+    <doc-example id="gapfill">
+      <header-prop>
+        <h3>Basic example</h3>
+      </header-prop>
+      <doc-descr>Width of the gapfill window is set automatically according to the length of the correct value.</doc-descr>
+
+      <gap-fill id="gp1" correct-value="OK" />
+    </doc-example>
+
+    <doc-example id="gapfill2correct">
+      <header-prop>
+        <h3>More correct values</h3>
+      </header-prop>
+      <doc-descr>The answers OK1 and OK2 are both correct and considered as a good answer.</doc-descr>
+
+      <gap-fill id="gp21" correct-value="OK1|OK2" />
+    </doc-example>
+
+    <doc-example id="gapfillempty">
+      <header-prop>
+        <h3>Empty value is correct</h3>
+      </header-prop>
+      <doc-descr>This feature can be used in the exercise with filling in articles or prepositions to the text.</doc-descr>
+      <gap-fill id="gp20" correct-value="" />
+    </doc-example>
+
+    <doc-example id="gapfillhint">
+      <header-prop>
+        <h3>Hint for answer</h3>
+      </header-prop>
+      <doc-descr>
+        Student is given a hint what to answer<br/>
+        Some hints or instructions can be written in the gapfill window.
+      </doc-descr>
+
+      <gap-fill id="gp192" correct-value="a" hint="a" />
+
+    </doc-example>
+
+    <doc-example id="gapfillexchangeable">
+      <header-prop>
+        <h3>Exchangable answers</h3>
+      </header-prop>
+      <doc-descr>
+        Used when student can exchange order of answers<br/>
+        attribute eval-group is used in format id-exchangeable where 'id' is selectable but necessary value
+      </doc-descr>
+
+      <gap-fill id="gp121" correct-value="a" eval-group="e1-exchangeable" hint="a" />
+      <gap-fill id="gp122" correct-value="b" eval-group="e1-exchangeable" hint="b" />
+      <gap-fill id="gp123" correct-value="c" eval-group="e1-exchangeable" hint="c" />
+
+    </doc-example>
+
+    <doc-example id="gapfilland">
+      <header-prop>
+        <h3>All gap fills must be answered correctly to be scored</h3>
+      </header-prop>
+      <doc-descr>
+        Used when student have to answer all correct<br/>
+        attribute eval-group is used in format and-id where 'id' is selectable but necessary value
+      </doc-descr>
+      <gap-fill id="gp131" correct-value="a" eval-group="and-a1" hint="a" />
+      <gap-fill id="gp132" correct-value="b" eval-group="and-a1" hint="b" />
+      <gap-fill id="gp133" correct-value="c" eval-group="and-a1" hint="c" />
+    </doc-example>
+
+    <doc-example id="gapfillandexchangeable">
+      <header-prop>
+        <h3>Combination of 'and' and 'exchangable'</h3>
+      </header-prop>
+      <doc-descr>
+        Used when student can exchange order of answers but have to answer it all correct<br/>
+        attribute eval-group is used in format and-id-exchangeable where 'id' is selectable but necessary value
+      </doc-descr>
+
+      <gap-fill id="gp141" correct-value="a" eval-group="and-ae1-exchangeable" hint="a" />
+      <gap-fill id="gp142" correct-value="b" eval-group="and-ae1-exchangeable" hint="b" />
+      <gap-fill id="gp143" correct-value="c" eval-group="and-ae1-exchangeable" hint="c" />
+
+    </doc-example>
+
+    <doc-example id="gapfilllength">
+      <header-prop>
+        <h3>Adjusted width (long and short word)</h3>
+      </header-prop>
+      <doc-descr>
+        Default width of gap fills - it is set automatically according to length of attribute correct-value
+      </doc-descr>
+
+      <gap-fill id="gp22" correct-value="long long long word to enter into the gapfill" />
+      <gap-fill id="gp3" correct-value="word" />
+
+    </doc-example>
+
+    <doc-example id="gapfillsmartwidth">
+      <header-prop>
+        <h3>Uniform width</h3>
+      </header-prop>
+      <doc-descr>
+        Uniform width is used not to disclose the length of the correct answers.<br/>
+        All gap-fills with the same value of attribute 'width-group' has the same width. It is set automatically to the longest correct-value value
+      </doc-descr>
+
+      <gap-fill id="gp91" correct-value="short" width-group="same_length" />
+      <gap-fill id="gp92" correct-value="thirty-four" width-group="same_length" />
+
+    </doc-example>
+
+    <doc-example id="gapfillwidth">
+      <header-prop>
+        <h3>Manually set width</h3>
+      </header-prop>
+      <doc-descr>
+        Width is set using attribute width, can be set to anything longer then minimal value needed to fit correct-value.
+      </doc-descr>
+
+      <gap-fill id="gfw91" correct-value="abcd" width="100" />
+      <gap-fill id="gfw92" correct-value="efgh" width="100" />
+
+    </doc-example>
+
+    <doc-example id="gapfillreadonly">
+      <header-prop>
+        <h3>Examples - read only gap fill</h3>
+      </header-prop>
+      <doc-descr>
+        Usually is used to give student example how to fill in rest of gap fills
+      </doc-descr>
+
+      <gap-fill id="gfro91" correct-value="abcd" read-only="true" />
+
+    </doc-example>
+
+    <doc-example id="gapfillskipeval">
+      <header-prop>
+        <h3>Skip evaulation of this gap fill</h3>
+      </header-prop>
+      <doc-descr>
+        Usually is used to give student chance to answer according to his oppinion. This gap fill is skipped for evaulation
+      </doc-descr>
+
+      <gap-fill id="gfse91" correct-value="abcd" skip-evaluation="true" />
+
+    </doc-example>
+      
+    <doc-example id="gapfillcasesensitive">
+      <header-prop>
+        <h3>Case sensitive evaluation</h3>
+      </header-prop>
+      <doc-descr>It is used to distinguish capital letters.</doc-descr>
+
+      <gap-fill correct-value="CORRECT" case-sensitive="true" />
+
+    </doc-example>
+
+    <doc-example id="gapfillrussian">
+      <header-prop>
+        <h3>Cyrillic in corrrect-value attribute</h3>
+      </header-prop>
+      <doc-descr>This example is included to check if Cyrillic alphabet displays correctly.</doc-descr>
+
+      <gap-fill id="gp45" correct-value="катаются" />
+
+    </doc-example>
+
+    <doc-example id="gapfillgeneratedoffer">
+      <header-prop>
+        <h3>Generated offer of words from correct-value attribute </h3>
+      </header-prop>
+      <doc-descr>The offer includes all correct-value answers. The student only decide where to place them. Repeated values (value1) are ignored.</doc-descr>
+      <offering id="from-gap-fill" />
+      <gap-fill offering-id="from-gap-fill" correct-value="value1|value2" />
+      <gap-fill offering-id="from-gap-fill" correct-value="value3|value1" />
+      <gap-fill offering-id="from-gap-fill" correct-value="bear" />
+      <gap-fill offering-id="from-gap-fill" correct-value="beer" />
+
+    </doc-example>
+
+    <doc-example id="gapfilldefaultoffer">
+      <header-prop>
+        <h3>Offer of words different from correct-value attributes</h3>
+      </header-prop>
+      <doc-descr>Correct values should NOT appear in the offer, student has to modify words from offer to get score.</doc-descr>
+      <offering id="aaa" words="short|long" mode="gap-fill-ignore"/>
+
+      <gap-fill id="gp01" correct-value="shorter" offering-id="aaa" />
+      <gap-fill id="gp02" correct-value="longer" offering-id="aaa" />
+
+    </doc-example>
+
+    <doc-example id="wo1">
+      <header-prop>
+        <h3>Word ordering using offer with makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-list-word-ordering>
+        <![CDATA[
+word1 | word3 | word2
+Word1 word2 word3.
+a) a  12) she c) garden d) has  e) beautiful
+She has a beautiful garden.
+]]>
+      </macro-list-word-ordering>
+    </doc-example>
+
+    <!--<doc-example id="gapfilllist">
+      <header-prop>
+        <h3>GapFill list using makro</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <macro-list inline-type="GapFill">
+        <![CDATA[
+        # grid_item1 |grid_item2 |grid_item3
+        1) Jednoduchý příklad {gp1} jen jedno řešení gp1
+        2) Složitější příklad {gp2|gp3} 2 správná řešení gp2,gp3
+       ]]>
+      </macro-list>
+      <macro-list inline-type="GapFill">
+        <![CDATA[
+        # eat | drink | sleep
+        She {eats} a cake.
+        He {drinks|is drinking} coffee.
+      ]]>
+      </macro-list>
+      <macro-table inline-type="GapFill">
+        <![CDATA[
+        # eat | drink | sleep
+        1\She {eats} a cake.
+        2\He {drinks|is drinking} coffee.
+      ]]>
+      </macro-table>
+    </doc-example>-->
+
+    <doc-example id="gapfillmakro">
+      <header-prop>
+        <h3>GapFill using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+
+      <macro-table inline-type="GapFill" style-sheet="offering {words: eat|drink};&gt;">
+        <![CDATA[
+        # 
+        She {eats} a cake.
+        He {drinks|is drinking} coffee.
+      ]]>
+      </macro-table>
+    </doc-example>
+
+    <doc-example id="correction">
+      <header-prop>
+        <h3>Correction -> modification of init value </h3>
+      </header-prop>
+      <doc-descr>Students should modify the init value to get the correct value.</doc-descr>
+
+      <gap-fill id="gp23" init-value="live" correct-value="lives" />
+
+    </doc-example>
+
+    <doc-example id="correctionlist">
+      <header-prop>
+        <h3>Correction list using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-list inline-type="GapFill_Correction">
+        <![CDATA[
+        1. jednoduchý příklad {wrong1|ok1} text pokračuje
+        2. složitější initvalue + 2 správná řešení ok1,ok2 {wrongp1/wrongp2|ok1|ok2}
+      ]]>
+      </macro-list>
+    </doc-example>
+
+    <doc-example id="correctiontable">
+      <header-prop>
+        <h3>correction table using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-table inline-type="GapFill_Correction">
+        <![CDATA[
+        vpravo správně - ok\ {wrong|ok}
+        {wrong2|ok2|ok3} \ vlevo správně ok2,ok3
+      ]]>
+      </macro-table>
+    </doc-example>
+
+    <doc-example id="gapfillintable">
+      <header-prop>
+        <h3>Table with makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-table inline-type="no">
+        <![CDATA[
+          #lmy Lieferung / Leistung\#cmy Menge \#cmy Einzelpreis 	\#cmy Gesamtpreis
+          #lm Luxusbürostuhl \#cm 2\#cm 89,00 €\#cm 178,00 €
+          #lm Rollcontainer mit~ Schubladen \#cm 1 \#cm 39,00 € \#cm 39,00 €
+          #lty Technische Daten:Fahrzeugtyp~~Türenul.\Gesamtgewicht\>8 g/km\E5
+        ]]>
+      </macro-table>
+    </doc-example>
+  </body>
+</html>

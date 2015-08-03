@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Instructions</title>
+  </head>
+  <body order="2" instr-title="Excercise with instructions" class="app-doc" instr-body="FILLING_IN_FROM_A_LIST_NEW|CORRECTION|filling_in">
+    <doc-example id="instructions">
+      <header-prop>
+        <h3>Instructions</h3>
+      </header-prop>
+      <doc-descr>There are two diferrent type of instruction for each excercise.<br />
+        Technical instruction - used to instruct student how to deal with different type of controls - entered in instrs-str attribute<br />
+        General instruction - used to instruct student what to do with excercise (what to anwser, how many time does he have atc.)  - entered in instr-title attribute
+      </doc-descr>
+
+      <p>Technical instruction in this excercise instrs-str="FILLING_IN_FROM_A_LIST_NEW|CORRECTION|filling_in"  </p>
+      <p>General instruction in this excercise instr-title="Excercise with instructions" </p>
+    </doc-example>
+    
+  </body>
+</html>

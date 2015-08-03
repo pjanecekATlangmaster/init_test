@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Pairing</title>
+  </head>
+  <body order="10" instr-title="Pairing - Instruction" class="app-doc" instr-body="FILLING_IN">
+    <doc-example id="pairing">
+      <header-prop>
+        <h3>Pairing</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <pairing id="pair1" left-random="false">
+        <pairing-item right="Right 1">
+          Left 1
+        </pairing-item>
+        <pairing-item right="Right 2">
+          Left 2
+        </pairing-item>
+        <pairing-item right="Right 3">
+          Left 3
+        </pairing-item>
+        <pairing-item right="Right 4">
+          Left 4
+        </pairing-item>
+      </pairing>
+    </doc-example>
+
+    <doc-example id="pairing-random">
+      <header-prop>
+        <h3>Pairing with random left side</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <pairing id="pair2" left-random="true">
+        <pairing-item right="Right 1">
+          Left 1
+        </pairing-item>
+        <pairing-item right="Right 2">
+          Left 2
+        </pairing-item>
+        <pairing-item right="Right 3">
+          Left 3
+        </pairing-item>
+        <pairing-item right="Right 4">
+          Left 4
+        </pairing-item>
+      </pairing>
+    </doc-example>
+
+    <doc-example id="pairing-small">
+      <header-prop>
+        <h3>Pairing with small left side</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <pairing id="pair21" left-width="small" left-random="false">
+        <pairing-item right="Right 1">
+          Left 1
+        </pairing-item>
+        <pairing-item right="Right 2">
+          Left 2
+        </pairing-item>
+        <pairing-item right="Right 3">
+          Left 3
+        </pairing-item>
+        <pairing-item right="Right 4">
+          Left 4
+        </pairing-item>
+      </pairing>
+    </doc-example>
+     
+    <doc-example id="pairing-xsmall">
+      <header-prop>
+        <h3>Pairing with extra small left side</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <pairing id="pair22" left-width="xsmall" left-random="false">
+        <pairing-item right="Right 1">
+          Left 1
+        </pairing-item>
+        <pairing-item right="Right 2">
+          Left 2
+        </pairing-item>
+        <pairing-item right="Right 3">
+          Left 3
+        </pairing-item>
+        <pairing-item right="Right 4">
+          Left 4
+        </pairing-item>
+      </pairing>
+    </doc-example>
+      
+    <doc-example id="pairing-loc">
+      <header-prop>
+        <h3>Pairing with localization</h3>
+      </header-prop>
+      <doc-descr>Text to localize should be place inside {{xxx|text}} brackets with syntax like bellow where xxx is unique attribute value</doc-descr>
+      <pairing id="pair3" left-random="true">
+        <pairing-item right="{{loc12|loc right1}}">
+          {{loc11|loc left1}}
+        </pairing-item>
+        <pairing-item right="{{loc22|loc right2}}">
+          {{loc21|loc left2}}
+        </pairing-item>
+        <pairing-item right="{{loc32|loc right3}}">
+          {{loc31|loc left3}}
+        </pairing-item>
+      </pairing>
+    </doc-example>
+
+    <doc-example id="pairingmakro">
+      <header-prop>
+        <h3>Pairing using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-pairing>
+        <![CDATA[
+        1. Left part standard 1   \ a) Right part 1
+        2. Left (1 tilda)~part 2 \ b) Right part 2
+        2. Left (2x tilda)~~part 3   \ a) Right part 3
+      ]]>
+      </macro-pairing>
+    </doc-example>
+  </body>
+</html>

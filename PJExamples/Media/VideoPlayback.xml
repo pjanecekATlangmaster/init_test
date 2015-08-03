@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Video playback</title>
+  </head>
+  <body order="11" instr-title="Video playback instruction" class="app-doc" instr-body="VIDEO_PLAYBACK">
+
+    <doc-example id="video1">
+      <header-prop>
+        <h3>Video playback</h3>
+      </header-prop>
+      <doc-descr>Resize window to see behaviour on small resolution</doc-descr>
+      <media-video id="pdlg1" media-url="media/video@std-4" />
+      <media-player share-media-id="pdlg1" />
+    </doc-example>
+
+    <doc-example id="video2">
+      <header-prop>
+        <h3>Video playback with subtitles using makro</h3>
+      </header-prop>
+      <doc-descr>resize window to see behaviour on small resolution</doc-descr>
+      <macro-video cut-url="media/video" />
+    </doc-example>
+
+    <doc-example id="video3">
+      <header-prop>
+        <h3>Video playback with dialog</h3>
+      </header-prop>
+      <doc-descr>resize window to see behaviour on small resolution</doc-descr>
+      <media-video share-media-id="pdlg2" />
+      <media-player share-media-id="pdlg2" />
+      <media-text id="pdlg2">
+        <include-dialog cut-url="media/video"></include-dialog>
+      </media-text>
+    </doc-example>
+
+
+    <doc-example id="video4">
+      <header-prop>
+        <h3>Video playback with dialog using makro</h3>
+      </header-prop>
+      <doc-descr>resize window to see behaviour on small resolution</doc-descr>
+      <macro-video cut-url="media/video" display-style="WithDialog" />
+    </doc-example>
+
+  </body>
+</html>

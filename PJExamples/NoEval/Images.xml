@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Images</title>
+  </head>
+  <body order="5" class="app-doc">
+    <doc-example id="image1">
+      <header-prop>
+        <h3>Image relative path</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <img src="img/L6_A1_Pic1.png" />
+    </doc-example>
+    <doc-example id="image2">
+      <header-prop>
+        <h3>Image absolute path</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <img src="/lm/examples/controls_noeval/img/L6_A1_Pic1.png" />
+    </doc-example>
+    <doc-example id="image3">
+      <header-prop>
+        <h3>Image external server</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <img src="http://test.langmaster.com/alpha/lm/examples/controls_noeval/img/L6_A1_Pic1.png" />
+    </doc-example>
+  
+  </body>
+</html>

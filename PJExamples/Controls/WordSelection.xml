@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Word Selection</title>
+  </head>
+  <body order="7" instr-title="Word Selection - Instruction" class="app-doc" see-also-links="" instr-body="SINGLE_CHOICE">
+
+    <doc-example id="simpleselection">
+      <header-prop>
+        <h3>Simple example</h3>
+      </header-prop>
+      <doc-descr>word marked with # is the correct one</doc-descr>
+      <word-selection id="w02" words="#true|false" />
+    </doc-example>
+
+    <doc-example id="differenceinselection">
+      <header-prop>
+        <h3>Word selection x word multi selection</h3>
+      </header-prop>
+      <doc-descr>Two similar controls may be used for word selection<br/>
+      word-selection is used when exactly one answer is correct - all other have to be false<br/>
+        word-multi-selection is used when more asnwers may be correct OR only one word (true or false) can be used as the answer
+      </doc-descr>
+      <word-selection id="wdf01" words="#true|false" />
+      <br/>
+      <word-multi-selection id="wdf02" words="#true" />
+      <br/>
+      <word-multi-selection id="wdf03" words="#true1|#true2|false" />
+    </doc-example>
+
+    <doc-example id="selection-eval-group">
+      <header-prop>
+        <h3>Eval group</h3>
+      </header-prop>
+      <doc-descr>
+        When related word-selections are nested in different elements, eval-group attribute may be used to connect them with value and-id, where id is selectable but required value
+      </doc-descr>
+      <word-selection words="#true" eval-group="and-c1" />
+      <word-selection words="false1" eval-group="and-c1" />
+      <word-selection words="false2" eval-group="and-c1" />
+    </doc-example>
+    
+    <doc-example id="ws1">
+      <header-prop>
+        <h3>Word Selection list using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-list inline-type="WordSelection">
+        <![CDATA[
+        a. {wrong1|wrong2| #correct|wrong4} text
+        b. Bananas are {blue| #red|yellow}.
+      ]]>
+      </macro-list>
+    </doc-example>
+
+    <doc-example id="ws3">
+      <header-prop>
+        <h3>Word Selection table using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-table inline-type="WordSelection">
+        <![CDATA[
+{wrong1|wrong2|#correct|wrong4} \ text
+bananas: \ {blue|red|#yellow}
+]]>
+      </macro-table>
+    </doc-example>
+
+    <doc-example id="wsentity">
+      <header-prop>
+        <h3>Selection with entity</h3>
+      </header-prop>
+      <doc-descr>word marked with # is the correct one</doc-descr>
+      <word-selection id="wse01" words="#&amp;lt;true&amp;gt;|B&amp;amp;B" />
+    </doc-example>
+    
+  </body>
+</html>

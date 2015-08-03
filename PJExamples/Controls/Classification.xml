@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Classification</title>
+  </head>
+  <body order="13" instr-title="Classification instruction"  instr-body="SORTING_INTO_GROUPS_WRITING|SORTING_INTO_GROUPS_DRAG_AND_DROP" class="app-doc">
+
+    <doc-example id="gapfill">
+      <header-prop>
+        <h3>Classification - exchangable values in more groups</h3>
+      </header-prop>
+      <doc-descr>
+        correct answer may be written in any of grouped gap_fills<br/>
+        when one group has different number of gap fills special value of correct value attribute ???ignore??? can be used
+      </doc-descr>
+
+      <offering id="of1" />
+      <div class="row">
+        <div class="col-md-3">
+          <gap-fill correct-value="c1" hint="c1" eval-group="cg-exchangeable" offering-id="of1"/>
+          <gap-fill correct-value="c2" hint="c2" eval-group="cg-exchangeable" offering-id="of1"/>
+          <gap-fill correct-value="c3" hint="c3" eval-group="cg-exchangeable" offering-id="of1"/>
+        </div>
+        <div class="col-md-3">
+          <gap-fill correct-value="d4" hint="d4" eval-group="dg-exchangeable" offering-id="of1"/>
+          <gap-fill correct-value="d5" hint="d5" eval-group="dg-exchangeable" offering-id="of1"/>
+          <gap-fill correct-value="???ignore???" eval-group="dg-exchangeable" offering-id="of1"/>
+        </div>
+      </div>
+
+
+    </doc-example>
+
+    <doc-example id="dropdown">
+      <header-prop>
+        <h3>DropDown classification - exchangable values</h3>
+      </header-prop>
+      <doc-descr>
+        correct answer may be written in any of grouped drop downs<br/>
+        when one group has different number of drop downs special value of correct value attribute ???ignore??? can be used
+      </doc-descr>
+
+      <offering id="of2" />
+      <div class="row">
+        <div class="col-md-3">
+          <drop-down correct-value="c1" eval-group="cd-exchangeable" offering-id="of2"/>
+          <drop-down correct-value="c2" eval-group="cd-exchangeable" offering-id="of2"/>
+          <drop-down correct-value="c3" eval-group="cd-exchangeable" offering-id="of2"/>
+        </div>
+        <div class="col-md-3">
+          <drop-down correct-value="d4" eval-group="dd-exchangeable" offering-id="of2"/>
+          <drop-down correct-value="d5" eval-group="dd-exchangeable" offering-id="of2"/>
+          <drop-down correct-value="???ignore???" eval-group="dd-exchangeable" offering-id="of2"/>
+        </div>
+      </div>
+    </doc-example>
+  </body>
+</html>

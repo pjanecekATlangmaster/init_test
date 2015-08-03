@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>CSS</title>
+  </head>
+  <body order="15" instr-title="CSS instruction" class="app-doc">
+
+    <doc-example id="basic-gap-fill-css">
+      <header-prop>
+        <h3>Offers from gap-fill using CSS</h3>
+      </header-prop>
+      <doc-descr>Atribut offering-id set to all nested gap-fill elements using CSS-like .</doc-descr>
+      <offering id="from-gap-fill-css"/>
+      <div style-sheet="gap-fill {offering-id: from-gap-fill-css;}">
+        <gap-fill correct-value="value1|value2"/>
+        <gap-fill correct-value="value3|value1"/>
+      </div>
+    </doc-example>
+
+    <doc-example id="css1">
+      <header-prop>
+        <h3>Make all gap-fills case sensitive using CSS</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <p style-sheet="gap-fill {case-sensitive: true}">
+        <gap-fill correct-value="UPPER" />
+      </p>
+    </doc-example>
+
+    <doc-example id="css2">
+      <header-prop>
+        <h3>Make all gap-fills in macro case sensitive using CSS</h3>
+      </header-prop>
+      <doc-descr>Use node element to use style-sheet attribute on macro</doc-descr>
+      <node style-sheet="gap-fill {case-sensitive: true;}">
+        <macro-list inline-type="GapFill" >
+          <![CDATA[
+        1) {UPPER}
+       ]]>
+        </macro-list>
+      </node>
+    </doc-example>
+
+    <doc-example id="css21">
+      <header-prop>
+        <h3>Assign score-weight 100 to makro pairing using CSS</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <node style-sheet="pairing {score-weight: 100;}">
+        <macro-pairing>
+          <![CDATA[
+        left1 \ right1
+        left2 \ right2
+        left3 \ right3
+        left4 \ right4
+       ]]>
+        </macro-pairing>
+      </node>
+    </doc-example>
+
+    <doc-example id="css3">
+      <header-prop>
+        <h3>Make all nested gap-fills case sensitive and set init-value</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <p style-sheet="gap-fill {case-sensitive: true; init-value: upper}">
+        <gap-fill correct-value="UPPER" />
+      </p>
+    </doc-example>
+
+    <doc-example id="css4">
+      <header-prop>
+        <h3>Set more atributes in one step - in this case set offering words and gap fill init-value + sensitivness</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <p style-sheet="offering {words: upper|lower}; gap-fill {case-sensitive: true; init-value: upper}">
+        <offering/>
+        <gap-fill correct-value="UPPER" />
+      </p>
+    </doc-example>
+
+
+    <doc-example id="basic-drop-down">
+      <header-prop>
+        <h3>Offers from drop-down discard - using css</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <offering id="from-drop-down1"/>
+      <div style-sheet="drop-down {offering-id: from-drop-down1;}">
+        <drop-down correct-value="value1"/>
+        <drop-down correct-value="value2"/>
+      </div>
+    </doc-example>
+
+    <doc-example id="basic-drop-down-keep">
+      <header-prop>
+        <h3>Offers from drop-down keep using css</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <offering id="from-drop-down-keep" mode="drop-down-keep"/>
+      <div style-sheet="drop-down {offering-id: from-drop-down-keep;}">
+        <drop-down correct-value="value1"/>
+        <drop-down correct-value="value2"/>
+        <drop-down correct-value="value1"/>
+      </div>
+    </doc-example>
+
+  </body>
+</html>

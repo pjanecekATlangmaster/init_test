@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><cut-dialog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <replica actor-id="a">
+    <phrase beg-pos="5429" end-pos="6407">
+      Good morning, Kevin.
+    </phrase>
+  </replica>
+  <replica actor-id="b">
+    <phrase beg-pos="6961" end-pos="8044">
+      Good morning.
+    </phrase>
+  </replica>
+  <replica actor-id="a">
+    <phrase beg-pos="8795" end-pos="10047">
+      How are you?
+    </phrase>
+  </replica>
+  <replica actor-id="b">
+    <phrase beg-pos="11199" end-pos="12543">
+      Fine, thanks.
+    </phrase>
+    <phrase beg-pos="12543" end-pos="13416">
+      And you?
+    </phrase>
+  </replica>
+  <replica actor-id="a">
+    <phrase beg-pos="14222" end-pos="20741">
+      I'm fine.
+    </phrase>
+  </replica>
+</cut-dialog>

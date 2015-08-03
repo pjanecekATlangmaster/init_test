@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPageObj xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <pageObj url="/lm/examples/controls_sound/media/media1" sitemapParents="0 0">
+    <types type="sndText" />
+    <types type="sent">
+      <props prop="begPos" value="18113" originType="sent" />
+      <props prop="endPos" value="18499" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="18499" originType="sent" />
+      <props prop="endPos" value="19805" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="19805" originType="sent" />
+      <props prop="endPos" value="20798" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="20798" originType="sent" />
+      <props prop="endPos" value="22046" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="22046" originType="sent" />
+      <props prop="endPos" value="23294" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="23294" originType="sent" />
+      <props prop="endPos" value="24809" originType="sent" />
+    </types>
+  </pageObj>
+  <pageObj url="/lm/examples/controls_sound/media/media2" sitemapParents="0 0">
+    <types type="sndText" />
+    <types type="sent">
+      <props prop="begPos" value="6050" originType="sent" />
+      <props prop="endPos" value="6761" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="6761" originType="sent" />
+      <props prop="endPos" value="7829" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="7855" originType="sent" />
+      <props prop="endPos" value="9252" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="9252" originType="sent" />
+      <props prop="endPos" value="10697" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="10697" originType="sent" />
+      <props prop="endPos" value="12148" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="12296" originType="sent" />
+      <props prop="endPos" value="14406" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="14406" originType="sent" />
+      <props prop="endPos" value="16653" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="16653" originType="sent" />
+      <props prop="endPos" value="18928" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="18928" originType="sent" />
+      <props prop="endPos" value="20670" originType="sent" />
+    </types>
+  </pageObj>
+  <pageObj url="/lm/examples/controls_sound/media/media3" sitemapParents="0 0">
+    <types type="sndDialog" />
+    <types type="replica">
+      <props prop="actor" value="A" originType="replica" />
+      <props prop="iconId" value="no" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="6050" originType="sent" />
+      <props prop="endPos" value="6761" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="6761" originType="sent" />
+      <props prop="endPos" value="7829" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="actor" value="B" originType="replica" />
+      <props prop="iconId" value="no" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="7855" originType="sent" />
+      <props prop="endPos" value="9252" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="9252" originType="sent" />
+      <props prop="endPos" value="10697" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="actor" value="A" originType="replica" />
+      <props prop="iconId" value="no" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="10697" originType="sent" />
+      <props prop="endPos" value="12148" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="actor" value="B" originType="replica" />
+      <props prop="iconId" value="no" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="12296" originType="sent" />
+      <props prop="endPos" value="14406" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="14406" originType="sent" />
+      <props prop="endPos" value="16653" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="actor" value="A" originType="replica" />
+      <props prop="iconId" value="no" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="16653" originType="sent" />
+      <props prop="endPos" value="18928" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="actor" value="C" originType="replica" />
+      <props prop="iconId" value="no" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="18928" originType="sent" />
+      <props prop="endPos" value="20670" originType="sent" />
+    </types>
+  </pageObj>
+  <pageObj url="/lm/examples/controls_sound/media/media4" sitemapParents="0 0">
+    <types type="sndDialog" />
+    <types type="replica">
+      <props prop="iconId" value="a" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="5429" originType="sent" />
+      <props prop="endPos" value="6407" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="iconId" value="b" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="6961" originType="sent" />
+      <props prop="endPos" value="8044" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="iconId" value="a" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="8795" originType="sent" />
+      <props prop="endPos" value="10047" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="iconId" value="b" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="11199" originType="sent" />
+      <props prop="endPos" value="12543" originType="sent" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="12543" originType="sent" />
+      <props prop="endPos" value="13416" originType="sent" />
+    </types>
+    <types type="replica">
+      <props prop="iconId" value="a" originType="replica" />
+      <props prop="sentTake" value="0" originType="replica" />
+    </types>
+    <types type="sent">
+      <props prop="begPos" value="14222" originType="sent" />
+      <props prop="endPos" value="20741" originType="sent" />
+    </types>
+  </pageObj>
+</ArrayOfPageObj>

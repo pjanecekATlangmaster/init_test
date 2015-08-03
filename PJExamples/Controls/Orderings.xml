@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Orderings</title>
+  </head>
+  <body order="10" instr-title="Orderings - Instruction" class="app-doc" >
+    <doc-example id="wordering">
+      <header-prop>
+        <h3>Word ordering</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <word-ordering correct-order="a|b|c|d" />
+    </doc-example>
+
+    <doc-example id="sordering">
+      <header-prop>
+        <h3>Sentence ordering</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <sentence-ordering>
+        <sentence-ordering-item>aaaaa</sentence-ordering-item>
+        <sentence-ordering-item>bbbbb</sentence-ordering-item>
+        <sentence-ordering-item>ccccc</sentence-ordering-item>
+      </sentence-ordering>
+    </doc-example>
+
+    <doc-example id="wordering-entity">
+      <header-prop>
+        <h3>Word ordering with entity</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <word-ordering correct-order="B&amp;amp;B|&amp;lt;true&amp;gt;" />
+    </doc-example>
+
+    <doc-example id="sordering-entity">
+      <header-prop>
+        <h3>Sentence ordering with entity</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <sentence-ordering>
+        <sentence-ordering-item>B&amp;amp;B</sentence-ordering-item>
+        <sentence-ordering-item>&amp;lt;true&amp;gt;</sentence-ordering-item>
+      </sentence-ordering>
+    </doc-example>
+
+    <doc-example id="ordering-writing">
+      <header-prop>
+        <h3>Ordering using makro</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <macro-list-word-ordering>
+        <![CDATA[
+Am Wochenende | ins Wochenendhaus fahren.
+Am Wochenende fährt er ins Wochenendhaus.
+Den ganzen Tag | auf den Beinen sein.
+Den ganzen Tag ist er auf den Beinen.
+]]>
+      </macro-list-word-ordering>
+    </doc-example>
+  </body>
+</html>

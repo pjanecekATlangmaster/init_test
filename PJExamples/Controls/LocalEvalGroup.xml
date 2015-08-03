@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Local eval group</title>
+  </head>
+  <body order="13" class="app-doc" instr-title="One can use local eval button to evaluate each control group separately">
+    <doc-example id="evalGroup1">
+      <header-prop>
+        <h3>Local eval group dropdown</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <eval-button id="g0"></eval-button>
+      <br />
+      <offering id="ds1" />
+      <br />
+      <drop-down id="gp18" correct-value="dogs" offering-id="ds1" eval-button-id="g0" />
+      <drop-down id="gp13" correct-value="horses" offering-id="ds1" eval-button-id="g0" />
+    </doc-example>
+    <doc-example id="evalGroup2">
+      <header-prop>
+        <h3>Local eval group check item true/false</h3>
+      </header-prop>
+      <doc-descr>xxx</doc-descr>
+      <eval-button id="g1"></eval-button>
+      <br />
+      <check-item correct-value="true" text-type="true-false" eval-button-id="g1" />
+      <br />
+      <check-item correct-value="false" text-type="true-false" eval-button-id="g1" />
+    </doc-example>
+    <doc-example id="evalGroup6">
+      <header-prop>
+        <h3>Local eval group check item yes/no</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g4"></eval-button>
+      <br />
+      <check-item id="cb3" correct-value="false" text-type="yes-no" eval-button-id="g4">
+        Toto je No veta
+      </check-item>
+    </doc-example>
+    <doc-example id="evalGroup3">
+      <header-prop>
+        <h3>Local eval group GapFill</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g2"></eval-button>
+      <br />
+      <gap-fill id="gp23" init-value="xxxx" correct-value="Text1" eval-button-id="g2" />
+    </doc-example>
+    <doc-example id="evalGroup4">
+      <header-prop>
+        <h3>Local eval group WordSelection</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g3"></eval-button>
+      <br />
+      <word-selection id="ws2" words="word1|word 2|#word 3" eval-button-id="g3" />
+    </doc-example>
+    <doc-example id="evalGroup5">
+      <header-prop>
+        <h3>Local eval group Radio button</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g5"></eval-button>
+      <br />
+      <single-choice id="sch1" eval-button-id="g5">
+        <radio-button >possibility 1</radio-button>
+        <radio-button correct-value="true">possibility 2</radio-button>
+        <radio-button >possibility 3</radio-button>
+      </single-choice>
+    </doc-example>
+    <doc-example id="evalGroup7">
+      <header-prop>
+        <h3>Local eval group pairing</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g6" score-as-ratio="true" ></eval-button>
+      <br />
+      <pairing id="pair1" eval-button-id="g6" score-weight="2">
+        <pairing-item right="Right 1">
+          Left 1
+        </pairing-item>
+        <pairing-item right="Right 2">
+          Left 2
+        </pairing-item>
+        <pairing-item right="Right 3">
+          Left 3
+        </pairing-item>
+      </pairing>
+    </doc-example>
+
+    <doc-example id="evalGroup8">
+      <header-prop>
+        <h3>Eval group</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g8"></eval-button>
+      <br />
+      <gap-fill correct-value="a" eval-button-id="g8"/>
+      <gap-fill correct-value="b" eval-button-id="g8"/>
+    </doc-example>
+
+    <!--<doc-example id="evalGroup9">
+      <header-prop>
+        <h3>Eval group</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <p>
+        <eval-btn id="g9"></eval-btn>
+        <br />
+        <gap-fill correct-value="a" group-id="a1"/>
+        <gap-fill correct-value="b" group-id="a1"/>
+      </p>
+    </doc-example>-->
+    <doc-example id="evalGroup10">
+      <header-prop>
+        <h3>Word multi selection</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g10"></eval-button>
+      <br />
+      <word-multi-selection words="a|#b|#c|d" eval-button-id="g10"/>
+    </doc-example>
+
+    <doc-example id="evalGroup11">
+      <header-prop>
+        <h3>Check box</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g11"></eval-button>
+      <br />
+      <check-box correct-value="true" eval-button-id="g11"/>
+    </doc-example>
+
+    <doc-example id="evalGroup12">
+      <header-prop>
+        <h3>Word ordering</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g12"></eval-button>
+      <br />
+      <word-ordering correct-order="a|b|c|d" eval-button-id="g12"/>
+    </doc-example>
+
+    <doc-example id="evalGroup13">
+      <header-prop>
+        <h3>Word ordering</h3>
+      </header-prop>
+      <doc-descr></doc-descr>
+      <eval-button id="g13"></eval-button>
+      <br />
+      <sentence-ordering>
+        <sentence-ordering-item>a</sentence-ordering-item>
+        <sentence-ordering-item>b</sentence-ordering-item>
+        <sentence-ordering-item>c</sentence-ordering-item>
+      </sentence-ordering>
+    </doc-example>
+  </body>
+</html>

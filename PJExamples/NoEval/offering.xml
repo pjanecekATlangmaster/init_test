@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.langmaster.com/new/author/coursemodelschema.xsd">
+  <head>
+    <title>Offerings</title>
+  </head>
+  <body order="7" instr-title="Offering - Instruction" class="app-doc" instr-body="FILLING_IN_FROM_A_LIST_NEW">
+    <doc-example id="basic-example">
+      <header-prop><h3>Words offering anywhere in the excercise</h3></header-prop>
+      <doc-descr>Usually used in conjuction with gap-fills or drop-downs</doc-descr>
+      <offering words="offer 1|offer 2|offer 3" />
+    </doc-example>
+  </body>
+</html>
